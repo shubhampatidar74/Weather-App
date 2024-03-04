@@ -108,6 +108,8 @@ function sunriseSunset(sunr, suns) {
     let month = clockData.getMonth() + 1;
     let year = clockData.getFullYear();
     let day = clockData.getDay();
+    month = month <= 9 ? "0" + month : month;
+    date = date <= 9 ? "0" + date : date;
 
     cdate.innerHTML = date + "/" + month + "/" + year;
 

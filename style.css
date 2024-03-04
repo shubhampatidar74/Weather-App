@@ -12,7 +12,7 @@ body {
 }
 
 body {
-    background-image: url("img/background.jpg");
+    background-image: url("img/background.webp");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -154,6 +154,12 @@ body {
     box-shadow: 0px 0px 10px rgb(20, 19, 19);
 }
 
+.items i{
+    font-size: 4rem;
+    color: #fff;
+}
+
+
 .items h3 {
     font-size: 2rem;
     font-family: "Chakra Petch", sans-serif;
@@ -167,24 +173,50 @@ body {
 }
 @media screen and (max-width: 1135px){
     *{
-        font-size: 8px;
+        font-size: 7px;
     }
     .items{
         width: 20vw;
     }
+    .container{
+        width: 100%;
+        height: 100%;
+        border-radius: 0px;
+    }
+    .items{
+        width: 35rem;
+        height: 25rem;
+    }
 }
 @media screen and (max-width: 768px) {
     *{
-        font-size:3px;
+        font-size:4px;
     }
     #searchdata{
         width: 50rem;
+        height: 30px;
     }
     .container {
         width: 100vw;
+        height: 100%;
         flex-direction: column;
     }
-    
+    .box1{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .maincontant{
+        width: 100%;
+        display: flex;
+    }
+    .img_box img {
+        width: 30rem;
+    }
+
     .box1,
     .box2 {
         width: 100%;
@@ -192,6 +224,6 @@ body {
     
     .items {
         width: 45%;
-        height: auto;
+        height: 30rem;
     }
 }
