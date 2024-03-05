@@ -73,7 +73,7 @@ function findweatherData(result) {
     let humid = result.main.humidity;
     humidity.innerHTML = humid + "%";
 
-    let weatherCondition = result.weather[0].main;
+    let weatherCondition =  result.weather[0].main;
     weather_condition.innerHTML = weatherCondition;
 
     let sunriseTime = result.sys.sunrise;

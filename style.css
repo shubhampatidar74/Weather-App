@@ -12,218 +12,292 @@ body {
 }
 
 body {
-    background-image: url("img/background.webp");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: #dadada;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .container {
-    width: 80vw;
-    height: auto;
-    background-color: #050404b0;
-    border-radius: 3rem;
+    width: 90%;
+    height: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
-    border: 0.4rem solid rgb(255, 255, 255);
-    box-shadow: 0px 0px 10px black;
-    /* backdrop-filter: blur(10px); */
-    padding: 1rem;
+    /* background-color: crimson; */
+    position: relative;
 }
-
-.box1 {
-    width: 30vw;
+.box1{
+    width: 30%;
     height: 100%;
+    /* background-color: lightgreen; */
+    position: relative;
+    padding: 1vw;
 }
-
-.search_box {
+.search_box{
     width: 100%;
-    height: 7rem;
+    /* background-color: #fff; */
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
+    position: relative;
+    gap: 2vw;
 }
-
-#searchdata {
-    width: 25rem;
-    height: 4rem;
-    border-radius: 2rem;
-    border: 3px solid #ffffff;
+#searchdata{
+    width: 25vw;
+    height: 2.5vw;
+    border-radius: 5vw;
+    padding-left: 1vw;
+    font-size: 1vw;
+    border: none;
     outline: none;
-    padding: 0rem 1rem 0rem 1rem;
-    font-size: 2rem;
-    background-color: #ffffff00;
-    color: white;
-
 }
-
 .search_icons {
-    width: 4rem;
-    height: 4rem;
-    display: grid;
-    place-items: center;
-    border-radius: 5rem;
-    background-color: #ffffff;
-    cursor: pointer;
-}
-
-.search_icons i {
-    font-size: 2rem;
-}
-
-.img_box {
-    width: 100%;
-    height: auto;
+    width: 4vw;
+    height: 2.5vw;
+    border-radius: 50px;
+    background-color: #fff;
     display: grid;
     place-items: center;
 }
-
-.img_box img {
-    width: 25rem;
+.search_icons i{
+    font-size: 1.3vw;
+    font-weight: bold;
 }
-
-.content_box {
+.maincontant{
     width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.content h1 {
-    font-size: 8rem;
-    font-family: "Chakra Petch", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-    color: #ffffff;
-}
-
-.content h1 sup {
-    font-size: 4rem;
-    font-family: "Chakra Petch", sans-serif;
-    font-weight: 300;
-    color: #ffffff;
-}
-
-.content p {
-    font-size: 3rem;
-    color: #fffefe;
-    font-family: "Chakra Petch", sans-serif;
-    font-weight: 300;
-}
-
-.box2 {
-    width: 70vw;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    flex-direction: row;
-}
-
-.d1 {
-    display: flex;
-}
-
-.d1 p {
-    font-family: "Chakra Petch", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    color: white;
-    font-size: 3rem;
-}
-
-.items {
-    width: 16vw;
-    height: 16vw;
-    margin: 1rem;
-    text-align: center;
+    position: relative;
+    margin-top: 2vw;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    border-radius: 3rem;
-    line-height: 5rem;
-    border: 3px solid gray;
-    box-shadow: 0px 0px 10px rgb(20, 19, 19);
+}
+.img_box{
+    width: 100%;
+    height: 10%;
+    overflow: hidden;
+    display: grid;
+    place-items: center;
+}
+#weather_img{
+    width:13vw;
+    background-position: center;
+    background-size: cover;
+}
+.content_box{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+}
+.content_box_child1 h1{
+    font-size: 6vw;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 400;
+}
+.content_box_child1 p{
+    font-size: 2vw;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 400;
+}
+.d1{
+    display: flex;
+}
+.content_box_child2 p{
+    font-size: 2vw;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 400;
 }
 
+.content_box_child1 sup{
+    font-size: 3vw;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 400;
+}
+.box2{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    /* background-color: chocolate; */
+}
+.items{
+    width: 15vw;
+    height: 15vw;
+    background-color: #d3d3d3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid #979797;
+    border-radius: 1vw;
+}
+.items h1{
+    font-size: 2.5vw;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 400;
+}
+.items h3{
+    font-size: 2vw;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 400;
+}
 .items i{
-    font-size: 4rem;
-    color: #fff;
-}
-
-
-.items h3 {
-    font-size: 2rem;
+    font-size: 2vw;
     font-family: "Chakra Petch", sans-serif;
-    color: white;
+    font-weight: 400;
 }
 
-.items h1 {
-    font-size: 4rem;
-    font-family: "Chakra Petch", sans-serif;
-    color: white;
-}
-@media screen and (max-width: 1135px){
-    *{
-        font-size: 7px;
-    }
-    .items{
-        width: 20vw;
-    }
+@media (min-width:768px) and (max-width:1023px){
+    
     .container{
         width: 100%;
         height: 100%;
-        border-radius: 0px;
+        display: inline;
+        overflow-y: scroll;
     }
-    .items{
-        width: 35rem;
-        height: 25rem;
+    .box1{
+        width: 100%;
+        height:auto;
     }
-}
-@media screen and (max-width: 768px) {
-    *{
-        font-size:4px;
+    #weather_img{
+        width: 30vw;
+    }
+    .box2{
+        width: 100%;
+        height: 60%;
+    }
+    .maincontant{
+        flex-direction: row;
     }
     #searchdata{
-        width: 50rem;
-        height: 30px;
+        width: 80vw;
+        height: 5vw;
+        font-size: 2vw;
     }
-    .container {
-        width: 100vw;
+    .search_box{
+        justify-content: center;
+        gap: 2vw;
+    }
+    .search_icons i{
+        font-size: 3vw;
+        font-weight: bold;
+    }
+    .search_icons {
+        width:5vw;
+        height:5vw;
+    }
+    .content_box_child1 h1{
+        font-size: 8vw;
+    }
+    .content_box_child1 sup{
+        font-size: 3vw;
+    }
+    .content_box_child1 p{
+        font-size: 3vw;
+    }
+    .content_box_child2 p{
+        font-size: 3vw;
+    }
+    .box2{
+        width: 100%;
+        height: auto;
+        gap: 3vw;
+        padding: 1vw;
+    }
+    .items{
+        width: 30vmax;
+        height: 16vmax;
+    }
+    .items i{
+        font-size: 6vw;
+    }
+    .items h3{
+        font-size: 3vw;
+    }
+    .items h1{
+        font-size: 3vw;
+    }
+    
+}
+
+@media screen and (max-width:767px) {
+    .container{
+        width: 100%;
         height: 100%;
         flex-direction: column;
     }
     .box1{
         width: 100%;
         height: auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
+    }
+    #weather_img{
+        width: 50vw;
     }
     .maincontant{
+        flex-direction: row;
+    }
+    .search_box{
+        justify-content: center;
+        gap: 2vw;
+    }
+    #searchdata{
+        margin-top: 2vw;
+        width: 80vw;
+        height: 9vw;
+        padding-left:3vw ;
+        font-size: 4.5vw;
+    }
+    .search_icons {
+        width:8vw;
+        height:8vw;
+    }
+    .search_icons i{
+        font-size: 5vw;
+        font-weight: bold;
+    }
+    .content_box{
+        align-items: start;
+        flex-direction: column;
+    }
+    .content_box_child1 h1{
+        font-size: 18vw;
+    }
+    .content_box_child1 sup{
+        font-size: 10vw;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    .content_box_child1 p{
+        font-size: 5vw;
+    }
+    .content_box_child2 p{
+        font-size: 5vw;
+    }
+    .box2{
         width: 100%;
-        display: flex;
+        gap: 2vw;
     }
-    .img_box img {
-        width: 30rem;
+    .items{
+        width: 20vmax;
+        height: 18vmax;
     }
-
-    .box1,
-    .box2 {
-        width: 100%;
+    .items i{
+        font-size: 10vw;
     }
-    
-    .items {
-        width: 45%;
-        height: 30rem;
+    .items h3{
+        font-size: 5vw;
+    }
+    .items h1{
+        font-size: 4vw;
+    }
+}
+@media screen and (max-width:270px){
+    .items{
+        width: 40vmax;
+        height: 12vmax;
     }
 }
